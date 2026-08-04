@@ -3,7 +3,7 @@ import requests
 base_url = "https://restful-booker.herokuapp.com"
 
 def test_get_booking():
-    response = requests.get(f"{base_url}/booking/3")
+    response = requests.get(f"{base_url}/booking/178")
     assert response.status_code == 200
     assert response.elapsed.total_seconds() < 1
     body = response.json()
