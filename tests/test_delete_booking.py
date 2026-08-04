@@ -10,6 +10,6 @@ def test_delete_booking():
 
     headers = {"Cookie": f"token={token}"}
 
-    response = requests.delete(f"{base_url}/booking/434", headers=headers)
+    response = requests.delete(f"{base_url}/booking/2469", headers=headers)
     assert response.status_code == 201
 

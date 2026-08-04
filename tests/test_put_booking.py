@@ -22,7 +22,7 @@ def test_put_booking():
         "additionalneeds": "Launch"
     }
 
-    response = requests.put(f"{base_url}/booking/178", headers=headers, json=payload)
+    response = requests.put(f"{base_url}/booking/1698", headers=headers, json=payload)
     assert response.status_code == 200
     body = response.json()
 
