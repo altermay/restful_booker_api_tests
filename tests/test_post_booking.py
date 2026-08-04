@@ -4,13 +4,13 @@ base_url = "https://restful-booker.herokuapp.com"
 
 def test_create_booking():
     payload = {
-        "firstname": "Taro",
-        "lastname": "Yamada",
-        "totalprice": 1050,
+        "firstname": "Mariko",
+        "lastname": "Tanaka",
+        "totalprice": 3000,
         "depositpaid": True,
         "bookingdates": {
-            "checkin": "2026-09-01",
-            "checkout": "2026-09-02"
+            "checkin": "2027-01-01",
+            "checkout": "2027-01-02"
         },
         "additionalneeds": "Launch"
     }
@@ -19,4 +19,3 @@ def test_create_booking():
     assert response.status_code == 200
     body = response.json()
     assert "bookingid" in body
-    print("Booking ID:", body["bookingid"])
