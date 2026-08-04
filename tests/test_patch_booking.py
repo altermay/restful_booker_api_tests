@@ -17,7 +17,7 @@ def test_patch_booking():
         }
     }
 
-    response = requests.put(f"{base_url}/booking/4225", headers=headers, json=payload)
+    response = requests.put(f"{base_url}/booking/1779", headers=headers, json=payload)
     assert response.status_code == 200
     body = response.json()
 
