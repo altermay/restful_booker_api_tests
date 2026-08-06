@@ -33,9 +33,9 @@ restful_booker_api_tests/
 │   ├── test_patch_booking.py
 │   └── test_delete_booking.py
 │
-├── requirements.txt
-├── README.md
 ├── .gitignore
+├── README.md
+├── requirements.txt
 └── restful_booker_postman_collection.json
 ```
 
