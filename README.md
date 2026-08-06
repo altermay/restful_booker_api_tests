@@ -21,16 +21,16 @@ The test suite validates booking retrieval, query parameter filtering, booking c
 restful_booker_api_tests/
 │
 ├── tests/
-│   ├── resutful_booker_test_get_booking_ids.py
-│   ├── resutful_booker_test_get_booking.py
-│   ├── resutful_booker_test_get_booking_by_name.py
-│   ├── resutful_booker_test_get_booking_by_checkin.py
-│   ├── resutful_booker_test_get_booking_by_checkout.py
-│   ├── resutful_booker_test_create_booking.py
-│   ├── resutful_booker_test_create_token.py
-│   ├── resutful_booker_test_update_booking.py
-│   ├── resutful_booker_test_patch_booking.py
-│   └── resutful_booker_test_delete_booking.py
+│   ├── test_get_booking_ids.py
+│   ├── test_get_booking.py
+│   ├── test_get_booking_by_name.py
+│   ├── test_get_booking_by_checkin.py
+│   ├── test_get_booking_by_checkout.py
+│   ├── test_create_booking.py
+│   ├── test_create_token.py
+│   ├── test_update_booking.py
+│   ├── test_patch_booking.py
+│   └── test_delete_booking.py
 │
 ├── requirements.txt
 ├── README.md
@@ -74,7 +74,7 @@ pytest -v
 Examples:
 
 ```bash
-pytest tests/resutful_booker_test_get_booking.py -v
+pytest tests/test_get_booking.py -v
 ```
 
 ## Validations Performed
@@ -92,9 +92,7 @@ The test suite includes validation of:
 
 ## Notes
 
-Some tests require a valid booking ID.
-
-For simplicity, booking IDs are manually specified within the test scripts. If a booking no longer exists, update the booking ID before running the test.
+Some tests require a valid booking ID. If a booking no longer exists, update the booking ID before running the test.
 
 ## Jenkins Integration
 
