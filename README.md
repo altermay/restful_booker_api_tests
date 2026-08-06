@@ -2,15 +2,16 @@
 
 ## Overview
 
-This project contains automated REST API tests developed using Python, pytest, and the requests library against the Restful Booker API.
+This project demonstrates REST API testing using both Postman and Python against the Restful Booker API.
 
-The test suite validates booking retrieval, query parameter filtering, booking creation, authentication, booking updates, partial updates, and deletion workflows.
+API scenarios were initially explored and validated in Postman and then automated using Python, pytest, and the requests library. The project covers booking retrieval, query parameter filtering, booking creation, authentication, booking updates, partial updates, and deletion workflows.
 
 ## Technologies Used
 
 - Python
 - pytest
 - requests
+- Postman
 - REST APIs
 - GitHub
 - Jenkins
@@ -32,6 +33,7 @@ restful_booker_api_tests/
 │   ├── test_patch_booking.py
 │   └── test_delete_booking.py
 │
+├── restful_booker_postman_collection.json
 ├── requirements.txt
 ├── README.md
 └── .gitignore
@@ -93,6 +95,12 @@ The test suite includes validation of:
 ## Notes
 
 Some tests require a valid booking ID. If a booking no longer exists, update the booking ID before running the test.
+
+## Postman Assets
+
+The repository includes a Postman collection and environment used for API exploration, manual validation, and test development.
+
+The Postman tests are not exact duplicates of the Python tests. Postman and Python were used to validate different API scenarios and demonstrate both manual and automated API testing approaches.
 
 ## Jenkins Integration
 
